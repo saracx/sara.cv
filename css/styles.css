@@ -208,7 +208,7 @@ footer {
     display: none;
   }
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(-45deg, #2b1d19, #481230, #140e57, #08352b);
@@ -231,4 +231,4 @@ footer {
   footer {
     color: var(--neon);
   }
-}
+} */
