@@ -2,7 +2,7 @@
   --text: #07051e;
   --primary: #432cf8;
   --secondary: #b4abfc;
-  --blue-link: #1021da;
+  --neon: #00ff00;
   --yellow: #fbd18f;
   --darkgrey: #888888;
   --lightgrey: #f8fafc;
@@ -11,7 +11,10 @@
 }
 
 body {
-  background-color: var(--lightgrey);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   filter: blur(2);
 }
 
@@ -26,7 +29,7 @@ button {
   padding: 0;
   margin: 0;
   text-shadow: 0 0 0px rgba(0, 0, 0, 0);
-  color: var(--blue-link);
+  color: var(--neon);
 }
 
 a,
@@ -45,6 +48,26 @@ main {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+header {
+  display: flex;
+  width: 75%;
+  margin: 3rem;
+}
+
+.header-img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+.header-img:hover {
+  margin-left: 1rem;
+}
+
 .cv-entry {
   text-align: justify;
   max-width: 800px;
@@ -54,6 +77,7 @@ main {
 
 ul {
   margin: 0;
+
   padding: 0rem;
 }
 
@@ -64,13 +88,64 @@ li {
 
 h1 {
   margin: 1rem 0;
+  color: var(--neon);
+  font-family: var(--main-type);
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(-45deg, #2b1d19, #481230, #140e57, #08352b);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  main {
+    text-shadow: 0 0 5px rgba(251, 209, 143, 0.6);
+    margin-bottom: 2rem;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
