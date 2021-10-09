@@ -31,10 +31,12 @@
 
   <body>
     <header>
-      <img class="header-img" src="favicon-32x32.png" />
-      <h1>sara.cv</h1>
+      <img class="header-img" src="Icon/Icon/smile.svg" />
+      <h1 class="title">sara.cv</h1>
     </header>
     <main id="content">
+      <h2>Professional work</h2>
+
       <ul class="cv-entry">
         <h3>05/2021 - now > Product & Growth, Txeya</h3>
         <li>Go to market strategy</li>
@@ -132,24 +134,23 @@
         <li>Content & landing page management</li>
         <li>Conversion rate optimization</li>
       </ul>
+
+      <h2>Projects</h2>
+      <ul class="cv-entry">
+        <h3><a href="https://mediadiet.herokuapp.com/">Media Diet</a></h3>
+        <li>
+          Build and publish a mixed media mixtape, selecting from music
+          (Spotify), movies (IMDB) and TV shows (TVDB)
+        </li>
+        <li>Extras: Basic Auth, Signup via Twitter</li>
+        <li>Built with React, Express, Postgres, Heroku</li>
+      </ul>
     </main>
+
+    <footer><img class="footer-logo" src="Icon/Icon/smile.svg" /></footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
