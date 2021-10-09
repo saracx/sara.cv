@@ -208,12 +208,11 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  /* body {
+  body {
     background: linear-gradient(-45deg, #2b1d19, #481230, #140e57, #08352b);
     animation: gradient 15s ease infinite;
     background-size: 600% 600%;
-    animation: gradient 15s ease infinite;
-  } */
+  }
 
   li {
     color: transparent;
