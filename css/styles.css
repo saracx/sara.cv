@@ -101,6 +101,7 @@ li {
   list-style-type: "→ ";
   margin-left: 1rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: transparent;
 }
 
 h1 {
@@ -172,6 +173,7 @@ footer {
 
   li {
     text-shadow: 0 0 5px rgba(251, 209, 143, 0.6);
+    color: transparent;
   }
 
   h2 {
